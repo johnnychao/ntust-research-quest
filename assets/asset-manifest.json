@@ -34,7 +34,7 @@
     {
       "id": "researcher",
       "file": "researcher.png",
-      "purpose": "社區運動研究站之原創研究員",
+      "purpose": "社區運動科學研究站之原創研究員",
       "ai_generated": true,
       "format": "PNG",
       "width": 1024,
@@ -74,7 +74,7 @@
     {
       "id": "athlete",
       "file": "athlete.png",
-      "purpose": "社區運動研究站之原創成年運動參與者",
+      "purpose": "社區運動科學研究站之原創成年運動參與者",
       "ai_generated": true,
       "format": "PNG",
       "width": 1024,
@@ -94,7 +94,7 @@
     {
       "id": "community",
       "file": "community.png",
-      "purpose": "第1與2堂社區運動研究站場景",
+      "purpose": "第1與2堂社區運動科學研究站場景",
       "ai_generated": true,
       "format": "PNG",
       "width": 1672,

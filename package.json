@@ -1,7 +1,7 @@
 {
   "name": "ntust-research-quest",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {"test": "node --test tests/state.test.js", "check": "node --check app.js && node --check state.js"}
 }

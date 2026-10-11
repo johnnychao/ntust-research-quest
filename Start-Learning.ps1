@@ -15,13 +15,13 @@ $nodeExecutable=if(Test-Path -LiteralPath $bundledNode){$bundledNode}else{(Get-C
 if(-not $nodeExecutable){throw '找不到Node.js。請先安裝Node.js，或直接使用README的公開網站。'}
 $previewUrl='http://127.0.0.1:' + $Port + '/'
 $alreadyAvailable=$false
-try { $existingResponse=Invoke-WebRequest -Uri $previewUrl -UseBasicParsing -TimeoutSec 2; $alreadyAvailable=$existingResponse.Content -match '運動研究探險隊' } catch {}
+try { $existingResponse=Invoke-WebRequest -Uri $previewUrl -UseBasicParsing -TimeoutSec 2; $alreadyAvailable=$existingResponse.Content -match '運動科學研究探險隊' } catch {}
 if(-not $alreadyAvailable) {
   $previewScript=Join-Path $PSScriptRoot 'tools\serve.mjs'
   $previewProcess=Start-Process -FilePath $nodeExecutable -ArgumentList @(('"' + $previewScript + '"'),[string]$Port) -WindowStyle Hidden -PassThru
   Set-Content -LiteralPath $pidPath -Value $previewProcess.Id -Encoding ASCII
   $ready=$false
-  for($attempt=0;$attempt -lt 20;$attempt++){Start-Sleep -Milliseconds 250;try{$response=Invoke-WebRequest -Uri $previewUrl -UseBasicParsing -TimeoutSec 1;if($response.Content -match '運動研究探險隊'){$ready=$true;break}}catch{}}
+  for($attempt=0;$attempt -lt 20;$attempt++){Start-Sleep -Milliseconds 250;try{$response=Invoke-WebRequest -Uri $previewUrl -UseBasicParsing -TimeoutSec 1;if($response.Content -match '運動科學研究探險隊'){$ready=$true;break}}catch{}}
   if(-not $ready){throw ('預覽啟動失敗。連接埠可能正在使用，請改用 -Port 8766。')}
 }
 Start-Process $previewUrl
