@@ -1,0 +1,7 @@
+"id","from","to","deltaCFI","deltaRMSEA","definition"
+"group_metric_vs_configural","group_configural","group_metric",0,0,"restricted minus less restricted; robust CFI/RMSEA"
+"group_scalar_vs_metric","group_metric","group_scalar",0,0,"restricted minus less restricted; robust CFI/RMSEA"
+"group_strict_vs_scalar","group_scalar","group_strict",0,0,"restricted minus less restricted; robust CFI/RMSEA"
+"time_metric_vs_configural","time_configural","time_metric",0,0,"restricted minus less restricted; robust CFI/RMSEA"
+"time_scalar_vs_metric","time_metric","time_scalar",0,0,"restricted minus less restricted; robust CFI/RMSEA"
+"time_strict_vs_scalar","time_scalar","time_strict",0,0,"restricted minus less restricted; robust CFI/RMSEA"

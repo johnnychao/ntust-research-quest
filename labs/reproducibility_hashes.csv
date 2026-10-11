@@ -1,0 +1,11 @@
+"file","first_md5","second_md5","identical"
+"synthetic_sport.csv","ed0f3740d5f20655818f8a79ff8ac87e","ed0f3740d5f20655818f8a79ff8ac87e",TRUE
+"synthetic_school_wide.csv","657fb46fd803d8e4f689a35a55f2bb0d","657fb46fd803d8e4f689a35a55f2bb0d",TRUE
+"synthetic_school_long.csv","4d1c4d8653a857f3e0326dea55b37bbf","4d1c4d8653a857f3e0326dea55b37bbf",TRUE
+"results.csv","ce0a24de63e398cfd3600a73266e036a","ce0a24de63e398cfd3600a73266e036a",TRUE
+"invariance_comparisons.csv","91d3ede187be9d872546419eb41dccdf","91d3ede187be9d872546419eb41dccdf",TRUE
+"efa_loadings.csv","0b2b4308b44afa42b293f9263544f246","0b2b4308b44afa42b293f9263544f246",TRUE
+"regression_paths.csv","46bb5058d46feb563bec4ae1bd8049ec","46bb5058d46feb563bec4ae1bd8049ec",TRUE
+"growth_parameters.csv","4a6ca638e044a53c329cf755aac607ed","4a6ca638e044a53c329cf755aac607ed",TRUE
+"model_parameters.csv","a26444806bb1e8a759200fa52206f02e","a26444806bb1e8a759200fa52206f02e",TRUE
+"time_basis.csv","225ffeb718f21c27c615a06569bc6f42","225ffeb718f21c27c615a06569bc6f42",TRUE

@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.Rhistory
+.RData
+test-results/
+output/
+*.zip
+teacher-private/
+
+.preview.pid

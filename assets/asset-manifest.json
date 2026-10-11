@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-10-11",
+  "generator": "OpenAI built-in image_gen",
+  "ai_generated": true,
+  "notes": [
+    "這些圖像為AI生成教學插圖，不是研究參與者照片、實際研究地點或研究證據。",
+    "老師角色依使用者授權的私人定稿參考圖轉製；原參考圖沒有複製到公開專案。",
+    "其餘人物與場景為原創生成；人物與背景分離，圖像沒有課程文字。",
+    "人物具有真實RGBA透明度；背景為不透明RGB，約16:9。",
+    "提示詞及檔案雜湊供未來年度維護與來源追溯。"
+  ],
+  "assets": [
+    {
+      "id": "teacher",
+      "file": "teacher.png",
+      "purpose": "恩恩老師的教學導引角色",
+      "ai_generated": true,
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "size_bytes": 1620985,
+      "sha256": "0d84007444b79ae309eb41fc4a34eac82982b4097c9a60f8157df442dfb2ba9b",
+      "transparent_background": true,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "reference": "User-approved private teacher character reference; not distributed",
+      "prompt": "Use case: stylized-concept. Asset type: a single transparent PNG character asset for a Traditional Chinese research learning game. Reference image role: character identity/outfit reference only, not an edit target. Recreate ONLY ONE full-body adult East Asian male teacher from the reference, in polished cute 3D chibi style: large head, small adult body, short swept black hair, thin dark rectangular glasses, friendly gentle smile. Preserve distinctive navy Chinese-style jacket with gold frog fasteners, white inner shirt, black trousers and black shoes. Friendly teaching pose, one arm openly gesturing toward empty space, the other relaxed. Soft matte clay-like materials, studio lighting, restrained cream/sage/terracotta accents, front three-quarter view. Isolated entire body with comfortable padding. Genuine transparent background alpha, no floor plane, no backing board, no checkerboard, no text, logo or watermark. One character, no sheet or collage, no other people.",
+      "verification": "Visually inspected full subject, style, no text or logos; PNG dimensions and alpha inspected with Pillow read-only."
+    },
+    {
+      "id": "researcher",
+      "file": "researcher.png",
+      "purpose": "社區運動研究站之原創研究員",
+      "ai_generated": true,
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "size_bytes": 1766786,
+      "sha256": "6ee04df19ff638ecf407744f4697e72d37c0105d65aa097e374d42841460ed77",
+      "transparent_background": true,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "reference": "No external reference; original AI-generated",
+      "prompt": "Use case: stylized-concept. Single full-body original adult female research scientist character for a research learning game. Polished cute 3D chibi proportions with large head and short small adult body, a friendly thoughtful woman with medium brown skin, dark curly bob hair, sage green cardigan over cream tee, terracotta trousers and simple trainers, holding a small blank notebook and pencil. Soft matte claylike materials, gentle studio lighting, calm approachable expression, front three-quarter view. Colors cream/sage/terracotta. Entire body including feet within canvas, comfortable transparent padding. Real transparent background alpha: isolated cutout only, no ground plane, no backing board, no checkerboard, no text/logos/watermark. No other people. Not a collage.",
+      "verification": "Visually inspected full subject, style, no text or logos; PNG dimensions and alpha inspected with Pillow read-only."
+    },
+    {
+      "id": "student",
+      "file": "student.png",
+      "purpose": "雪梨運動校園之原創學生",
+      "ai_generated": true,
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "size_bytes": 1733677,
+      "sha256": "a6124ac8fddbe108b6c8c4323b8b6f996757c78d30b5a382e3b1c994146e45a7",
+      "transparent_background": true,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "reference": "No external reference; original AI-generated",
+      "prompt": "Use case: stylized-concept. Single full-body original adolescent student character for a research learning game set at a Sydney sport school. Cute polished 3D chibi style, large head and small short body, friendly student with short dark hair, warm olive skin, gender-neutral styling, cream and sage sport polo, sage shorts, practical sneakers and small terracotta backpack. Friendly greeting pose, one hand waving. No sexualized features, no stereotypes. Soft matte claylike 3D surfaces, gentle studio light, calm cream/sage/terracotta palette. Full body including feet, generous transparent padding. Genuine transparent alpha background, isolated cutout only, no floor/backing board/checkerboard. No words, badges, logos, watermark or other characters. One single character, not a grid.",
+      "verification": "Visually inspected full subject, style, no text or logos; PNG dimensions and alpha inspected with Pillow read-only."
+    },
+    {
+      "id": "athlete",
+      "file": "athlete.png",
+      "purpose": "社區運動研究站之原創成年運動參與者",
+      "ai_generated": true,
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "size_bytes": 1623445,
+      "sha256": "1f595f6447ceb64bd69ce0a65e05d18a524a051f263e834ee30becde287b8ea9",
+      "transparent_background": true,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "reference": "No external reference; original AI-generated",
+      "prompt": "Use case: stylized-concept. Asset: single full-body original adult recreational athlete for a research learning game. Cute polished 3D chibi adult, big head and compact adult proportions. Friendly adult woman with warm brown skin, black hair tied in a short ponytail, comfortable sage/cream sports tee, terracotta track trousers, running shoes, holding a reusable water bottle. Healthy varied everyday body, neither excessively thin nor muscular, no body-weight labels. Welcoming relaxed stance. Soft matte claylike surfaces, gentle studio lighting, palette cream/sage/terracotta. Whole figure and feet inside canvas with ample padding. Genuine transparent alpha background isolated cutout; no floor/backing board/checkerboard/text/logos/watermarks. One person only, not a sheet or collage.",
+      "verification": "Visually inspected full subject, style, no text or logos; PNG dimensions and alpha inspected with Pillow read-only."
+    },
+    {
+      "id": "community",
+      "file": "community.png",
+      "purpose": "第1與2堂社區運動研究站場景",
+      "ai_generated": true,
+      "format": "PNG",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "size_bytes": 2749536,
+      "sha256": "6eb0b051a68503181b03f55a74969143bc179e5de3e82edf3a45b747a82bc06d",
+      "transparent_background": false,
+      "alpha_range": null,
+      "reference": "No external reference; original AI-generated",
+      "prompt": "Use case: stylized-concept. Asset type: wide landscape 16:9 background for a research learning adventure. Create an original cute 3D chibi miniature community exercise research station: inviting low cream building with sage accents, wooden outdoor data desk under a canopy with blank papers and a laptop showing no text, garden walking paths curving between trees and shrubs, a small exercise field, simple benches. Rounded soft matte claylike model forms and tactile materials, warm daylight, gentle shadows, palette cream/sage/terracotta, calm educational mood. Wide elevated three-quarter diorama composition filling a horizontal 16:9 canvas, plenty of readable open areas for web overlay. Opaque background. No people, no characters, no words, no fake letters/numbers, no logos, no signage, no watermark. Not a grid or collage.",
+      "verification": "Visually inspected full subject, style, no text or logos; PNG dimensions and alpha inspected with Pillow read-only."
+    },
+    {
+      "id": "campus",
+      "file": "campus.png",
+      "purpose": "第3與4堂虛構雪梨體育高中場景",
+      "ai_generated": true,
+      "format": "PNG",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "size_bytes": 2455713,
+      "sha256": "21ac78deb82395925f22d349672f13b81212fa87128db7e26e6e337e197407d6",
+      "transparent_background": false,
+      "alpha_range": null,
+      "reference": "No external reference; original AI-generated",
+      "prompt": "Use case: stylized-concept. Asset type: wide landscape 16:9 background for a research learning adventure, matching a soft matte 3D miniature educational game world. Original evocative Sydney sport high school campus (fictional, not a specific school): modest warm terracotta brick school building, open sport oval with subtle running track, low spectator bleachers, gum-tree shade, a small research courtyard with wooden table and blank papers, cream/sage accents. Cute rounded 3D diorama model aesthetic, tactile soft materials, inviting warm daylight, calm cream/sage/terracotta palette. Wide elevated three-quarter composition across a horizontal 16:9 canvas with open area for web overlays. Opaque background. No people, no characters, no words or fake letters, no numbers, no logos, no watermark, no stereotyped Australian landmarks. Not a grid or collage.",
+      "verification": "Visually inspected full subject, style, no text or logos; PNG dimensions and alpha inspected with Pillow read-only."
+    }
+  ],
+  "webOptimizations": [
+    {
+      "file": "teacher.webp",
+      "source": "teacher.png",
+      "width": 1024,
+      "height": 1536,
+      "hasAlpha": true,
+      "bytes": 110546,
+      "sha256": "3dca2d6e2e1a56bf7842c19aa5f9021965a2dd9a5941def05803beaba0510666"
+    },
+    {
+      "file": "researcher.webp",
+      "source": "researcher.png",
+      "width": 1024,
+      "height": 1536,
+      "hasAlpha": true,
+      "bytes": 129934,
+      "sha256": "b7f80f4b55d54010a0891459657b72c0cdd6c7a90d1fbca3d177a3e33f2cf472"
+    },
+    {
+      "file": "student.webp",
+      "source": "student.png",
+      "width": 1024,
+      "height": 1536,
+      "hasAlpha": true,
+      "bytes": 118936,
+      "sha256": "24d8d3bc6ba2b5c802915a3d4863cc5820b7c9084c284e2a45061d2b4052df90"
+    },
+    {
+      "file": "athlete.webp",
+      "source": "athlete.png",
+      "width": 1024,
+      "height": 1536,
+      "hasAlpha": true,
+      "bytes": 103712,
+      "sha256": "e73e91176a44ab303088af1cee4a81fadf043ed0c08d6a71c27eb2c20a394f56"
+    },
+    {
+      "file": "community.webp",
+      "source": "community.png",
+      "width": 1672,
+      "height": 941,
+      "hasAlpha": false,
+      "bytes": 303204,
+      "sha256": "07575a05aaf892667bf3ca6bdb9cf830da3579ce85c384867643ab118a27d476"
+    },
+    {
+      "file": "campus.webp",
+      "source": "campus.png",
+      "width": 1672,
+      "height": 941,
+      "hasAlpha": false,
+      "bytes": 243536,
+      "sha256": "d4672ebeaa4ca66ddbb1f02409feb254c873c1e9096f46f70743483f65121553"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+SYNTHETIC ONLY — generated and fitted locally; not original-study replication.
+Seed: 1151011
+R: 4.5.2; lavaan: 0.6.20
+Verified models: 12; all converged and post.check TRUE; finite SE and robust fit measures.
+Sport missing indicator cells: 134/3600; EFA complete-case N: 215
+School missing indicator cells: 328/6000
+All displayed CFI/RMSEA are robust; SRMR is ordinary SRMR.
+Review README and codebook before interpretation.
+               id                label dataset   n estimator converged
+        sport_cfa   運動動機與活力 CFA   sport 300       MLR      TRUE
+        sport_sem        動機→活力 SEM   sport 300       MLR      TRUE
+ group_configural    跨 elite 組：形態  school 500       MLR      TRUE
+     group_metric    跨 elite 組：負荷  school 500       MLR      TRUE
+     group_scalar    跨 elite 組：截距  school 500       MLR      TRUE
+     group_strict    跨 elite 組：殘差  school 500       MLR      TRUE
+  time_configural         跨時間：形態  school 500       MLR      TRUE
+      time_metric         跨時間：負荷  school 500       MLR      TRUE
+      time_scalar         跨時間：截距  school 500       MLR      TRUE
+      time_strict         跨時間：殘差  school 500       MLR      TRUE
+            mimic           基線 MIMIC  school 500       MLR      TRUE
+           growth 合成指標簡化成長模型  school 500       MLR      TRUE
+       cfi      rmsea        srmr df     chisq    pvalue
+ 1.0000000 0.00000000 0.025092875 48 45.908868 0.5589266
+ 1.0000000 0.00000000 0.025092893 48 45.908869 0.5589265
+ 1.0000000 0.00000000 0.008306957 60 46.066742 0.9072762
+ 1.0000000 0.00000000 0.018878845 68 56.610333 0.8362539
+ 1.0000000 0.00000000 0.019410026 76 62.521293 0.8666268
+ 1.0000000 0.00000000 0.020216148 88 73.928742 0.8581743
+ 1.0000000 0.00000000 0.005890647 30 23.400073 0.7984620
+ 1.0000000 0.00000000 0.015601501 36 29.432423 0.7724325
+ 1.0000000 0.00000000 0.016639153 42 35.046199 0.7677014
+ 1.0000000 0.00000000 0.017445058 51 43.451654 0.7645153
+ 1.0000000 0.00000000 0.008545230  8  6.805544 0.5577512
+ 0.9997304 0.01652773 0.006636048  5  5.656964 0.3410409
+                         id             from           to deltaCFI deltaRMSEA
+ group_metric_vs_configural group_configural group_metric        0          0
+     group_scalar_vs_metric     group_metric group_scalar        0          0
+     group_strict_vs_scalar     group_scalar group_strict        0          0
+  time_metric_vs_configural  time_configural  time_metric        0          0
+      time_scalar_vs_metric      time_metric  time_scalar        0          0
+      time_strict_vs_scalar      time_scalar  time_strict        0          0
+                                         definition
+ restricted minus less restricted; robust CFI/RMSEA
+ restricted minus less restricted; robust CFI/RMSEA
+ restricted minus less restricted; robust CFI/RMSEA
+ restricted minus less restricted; robust CFI/RMSEA
+ restricted minus less restricted; robust CFI/RMSEA
+ restricted minus less restricted; robust CFI/RMSEA
+
+Windows PowerShell 5 UTF-8 BOM verification: PASS.
+Executed powershell.exe 5.1.22621.6133 -NoProfile -ExecutionPolicy Bypass -File test_ps5.ps1, which invokes the byte-identical UTF-8 BOM labs/run_labs.ps1 normal single run from a Chinese-path isolated copy.
+All 12 models and 21 checks passed; all 10 CSV SHA256 values identical to the original project; JSON identical excluding generatedAt.
+LC_ALL, LC_CTYPE and LANG were restored in the calling PowerShell process. Original staged source files and JSON were unchanged.
+Runner SHA256: DC93A7F301ECFF684BD0C428F126251CFE80041ACD064B7A5FC5C13B8831AF5E

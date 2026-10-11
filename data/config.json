@@ -1,0 +1,11 @@
+{
+  "courseId": "ntust-research-quest",
+  "title": "運動研究探險隊",
+  "teacher": "趙恩｜恩恩老師",
+  "defaultYear": 115,
+  "availableYears": [115, 116, 117, 118, 119, 120],
+  "dates": {"115": ["", "", "", ""]},
+  "durationMinutes": 180,
+  "repository": "https://github.com/johnnychao/ntust-research-quest",
+  "siteUrl": "https://johnnychao.github.io/ntust-research-quest/"
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#274c3e">
+  <meta name="description" content="跟著恩恩老師與研究小隊，在運動研究情境中探索 CFA、SEM、測量恆等性與潛在成長曲線。台科大四堂課的闖關學習手札。">
+  <title>運動研究探險隊｜台科大業師課程</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-world="community">
+  <a class="skip-link" href="#app">跳到學習內容</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="運動研究探險隊首頁">
+        <img src="favicon.svg" alt="" width="48" height="48">
+        <span><span class="brand-kicker">NTUST · 恩恩老師的研究手札</span><strong id="course-title">運動研究探險隊</strong></span>
+      </a>
+      <div class="header-controls">
+        <label class="year-control" for="year-select"><span>開課年度</span><select id="year-select" aria-label="開課年度"><option value="115">115年</option></select></label>
+        <button id="mode-toggle" class="button secondary mode-button" type="button" aria-pressed="false">教師投影</button>
+        <button id="menu-toggle" class="button ghost" type="button" aria-controls="primary-nav" aria-expanded="false">選單</button>
+      </div>
+    </div>
+    <div class="nav-strip">
+      <div class="nav-inner">
+        <nav id="primary-nav" class="primary-nav" aria-label="主要導覽">
+          <button type="button" data-view="map" aria-current="page"><span aria-hidden="true">⌁</span> 探險地圖</button>
+          <button type="button" data-view="resources"><span aria-hidden="true">▤</span> 研究補給站</button>
+          <button type="button" data-view="report"><span aria-hidden="true">▧</span> 學習手札</button>
+          <button type="button" data-view="settings"><span aria-hidden="true">⚙</span> 進度與設定</button>
+        </nav>
+        <div class="header-progress"><label id="progress-text" for="progress-bar">已完成 0 / 24 關</label><progress id="progress-bar" max="24" value="0">0 / 24</progress></div>
+      </div>
+    </div>
+  </header>
+  <div id="status" class="status-banner" role="status" aria-live="polite" aria-atomic="true"></div>
+  <main id="app" tabindex="-1">
+    <section class="empty-state loading-panel" aria-busy="true">
+      <img src="favicon.svg" width="80" height="80" alt="">
+      <p class="eyebrow">RESEARCH FIELD NOTES</p>
+      <h1>準備探險裝備中…</h1>
+      <p>即將打開四堂課的研究地圖與學習手札。</p>
+    </section>
+  </main>
+  <noscript><section class="panel noscript-panel"><h1>請開啟 JavaScript 以開始闖關</h1><p>闖關、研究筆記與進度儲存需要瀏覽器的 JavaScript 功能。開啟後重新整理這個網頁。</p></section></noscript>
+  <footer class="site-footer"><div><span class="footer-brand">⌁ 運動研究探險隊</span><p>台科大業師課程 · <span id="footer-year">115年・恩恩老師</span></p></div><p class="footer-note">從一個好問題出發，練習做有證據的研究。<br>進度與筆記保存在你目前使用的瀏覽器。</p></footer>
+  <script type="module" src="app.js" onerror="document.getElementById('app').innerHTML='<section class=&quot;empty-state panel&quot;><h1>研究地圖暫時無法開啟</h1><p>請確認網路連線，重新整理網頁。如果仍無法載入，請聯絡老師。</p><button class=&quot;button primary&quot; onclick=&quot;location.reload()&quot;>重新載入</button></section>'"></script>
+</body>
+</html>
