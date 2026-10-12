@@ -21,8 +21,6 @@ function updateHeader() {
   $('#progress-bar').value = count;
   $('#course-title').textContent = `${year}年｜${config.title}`;
   $('#footer-year').textContent = `${year}年・${config.teacher}`;
-  $('#mode-toggle').textContent = presenter ? '返回學生模式' : '教師投影模式';
-  $('#mode-toggle').setAttribute('aria-pressed', String(presenter));
   document.body.classList.toggle('presenter', presenter);
 }
 function navigate(route) {
@@ -214,7 +212,6 @@ async function boot() {
     const loaded = loadProgress(storage, config, course, year); progress = loaded.progress;
     $('#year-select').innerHTML = config.availableYears.map(value => `<option value="${value}" ${value === year ? 'selected' : ''}>${value}年</option>`).join('');
     $('#year-select').addEventListener('change', () => {clearTimeout(saveTimer); persist(); year = Number($('#year-select').value); const loaded = loadProgress(storage, config, course, year); progress = loaded.progress; taskDrafts.clear(); navigate('map'); render(); announce(loaded.warning || `已切換到${year}年，進度獨立保存。`, !!loaded.warning);});
-    $('#mode-toggle').addEventListener('click', () => {presenter = !presenter; taskDrafts.clear(); render(); announce(presenter ? '教師投影模式已開啟，可直接選擇任一關示範。' : '已返回學生模式。');});
     $('#menu-toggle').addEventListener('click', () => {const open = document.body.classList.toggle('menu-open'); $('#menu-toggle').setAttribute('aria-expanded', String(open));});
     render(false); if (loaded.warning) announce(loaded.warning, true);
   } catch (error) {
