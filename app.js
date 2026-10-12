@@ -36,9 +36,15 @@ function sourceHTML(gate) {
   const sources = gate.sourceIds.map(id => course.sources.find(source => source.id === id)).filter(Boolean);
   return `<aside class="source-note"><span class="badge">${esc(typeNames[gate.evidence.type] || '教學情境')}</span><p>${esc(gate.evidence.locator)}</p>${sources.map(source => `<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.title)} ↗</a>`).join('<br>')}</aside>`;
 }
+function renderCourseVideo() {
+  const video = config.introVideo;
+  if (!video) return '';
+  return `<section class="panel course-video no-print" aria-labelledby="course-video-title"><div class="course-video-heading"><div><p class="eyebrow">出發前，先認識這趟旅程</p><h2 id="course-video-title">${esc(video.title)}</h2></div><span class="pill">90秒・中文字幕</span></div><p id="course-video-description">台科大「運動科學與身體活動研究法」碩博士班課程，採PBL問題導向學習，由趙恩擔任業界師資協同實作四堂課。</p><video id="course-intro-video" controls playsinline preload="none" poster="${esc(video.poster)}" aria-labelledby="course-video-title" aria-describedby="course-video-description" tabindex="0"><source src="${esc(video.src)}" type="video/mp4">您的瀏覽器不支援影片播放，請使用下方連結下載影片。</video><p id="course-video-error" class="feedback error" hidden role="status">影片暫時無法載入，請重新整理，或下載影片後播放。也可以閱讀下方文字稿。</p><div class="course-video-tools"><p class="course-video-note">按播放即可觀看，可使用播放器控制音量、進度與全螢幕。影片已附中文字幕；觀看不影響闖關進度。</p><a class="button secondary" href="${esc(video.src)}" download="運動科學研究探險隊_90秒課程介紹_v2.mp4">下載影片（約16MB）</a></div><details class="course-video-transcript"><summary>閱讀影片文字稿</summary>${video.transcript.map(paragraph => `<p>${esc(paragraph)}</p>`).join('')}<a href="${esc(video.transcriptUrl)}" download>下載旁白文字稿</a></details></section>`;
+}
 function renderMap() {
   document.body.dataset.world = 'community';
   return `<section class="hero"><div class="hero-copy"><p class="eyebrow">恩恩老師 × 運動科學研究小隊</p><h1>跟著證據，<br>走進運動科學研究。</h1><p>四堂課，兩個研究世界。從看不見的動機，到能公平比較的量尺，一步步完成自己的研究筆記。</p><div class="actions">${button(completedCount(progress, course) ? '繼續我的旅程 →' : '開始第一關 →', 'go-gate', `data-id="${nextGate().id}"`, 'primary')}${button('查看四堂任務', 'scroll-lessons')}</div><p class="lesson-meta">免登入・進度存於此瀏覽器・每堂180分鐘</p></div><div class="hero-art"><img src="assets/community.webp" alt="有步道與資料工作桌的社區運動科學研究站" class="hero-world"><img src="assets/teacher.webp" alt="恩恩老師3D chibi引導角色" class="hero-teacher"><span class="hero-stamp">研究日誌<br><strong>${String(completedCount(progress, course)).padStart(2,'0')} / 24</strong></span></div></section>
+  ${renderCourseVideo()}
   <section id="lessons"><div class="lesson-heading"><div><p class="eyebrow">選擇研究旅程</p><h2>四堂課，循序解開線索</h2></div><span class="pill">${presenter ? '教師可直接進入任一關' : '完成上一關，解鎖下一關'}</span></div><div class="world-map">${course.lessons.map((lesson, index) => {
     const count = lesson.gates.filter(gate => progress.gates[gate.id]?.completed).length;
     const date = config.dates?.[String(year)]?.[index];
@@ -117,7 +123,16 @@ function render(focus = true) {
   if (route.startsWith('gate/')) {const gate = currentGate(); html = gate ? renderGate(gate) : '<section class="empty-state"><h1>找不到這個關卡</h1><a href="#map">返回地圖</a></section>';}
   else if (route.startsWith('lesson/')) {const lesson = course.lessons.find(item => item.id === route.slice(7)); html = lesson ? renderLesson(lesson) : renderMap();}
   else html = route === 'resources' ? renderResources() : route === 'report' ? renderReport() : route === 'settings' ? renderSettings() : renderMap();
+  // Stop playback when navigation, year or presentation mode replaces the home page.
+  $('#course-intro-video')?.pause();
   $('#app').innerHTML = html; updateHeader();
+  const video = $('#course-intro-video');
+  if (video) {
+    const videoError = $('#course-video-error');
+    const showVideoError = () => { if (video.isConnected) videoError.hidden = false; };
+    video.addEventListener('error', showVideoError, {once: true});
+    video.querySelector('source').addEventListener('error', showVideoError, {once: true});
+  }
   document.querySelectorAll('[data-view]').forEach(node => {const active = node.dataset.view === route; node.setAttribute('aria-current', active ? 'page' : 'false');});
   if (focus) { $('#app').focus({preventScroll: true}); window.scrollTo({top: 0, behavior: 'instant'}); }
 }

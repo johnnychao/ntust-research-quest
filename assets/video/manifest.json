@@ -1,0 +1,18 @@
+{
+  "title": "運動科學研究探險隊 90秒課程介紹",
+  "version": "v2",
+  "durationSeconds": 90,
+  "resolution": "1920x1080",
+  "codec": "H.264/AAC",
+  "caption": "Burned Traditional Chinese captions",
+  "source": "115_課程宣傳影片_v2 已驗證成片",
+  "websiteFile": "course-intro-v2.mp4",
+  "bytes": 15914281,
+  "sha256": "ad1e05e9ded4f6267f69267d9b3442b1bc095a8a8563efe8f95cdb986093dec7",
+  "posterFile": "course-intro-v2-poster.jpg",
+  "posterSource": "Actual 2-second CIS introduction frame from the completed v2 movie",
+  "posterSha256": "45e5f393c0a70855e098d2b13719233727a5ed7349d5e89284fb4531422bdad7",
+  "transcript": "docs/promo-narration.md",
+  "sourceAssets": "Original Enentutor CIS, existing generated chibi scenes, actual learning website capture; no original journal full text or participant data",
+  "progress": "Playback is independent of course progress; contentVersion stays 1.0.0"
+}

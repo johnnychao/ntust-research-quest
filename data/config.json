@@ -3,9 +3,39 @@
   "title": "運動科學研究探險隊",
   "teacher": "趙恩｜恩恩老師",
   "defaultYear": 115,
-  "availableYears": [115, 116, 117, 118, 119, 120],
-  "dates": {"115": ["", "", "", ""]},
+  "availableYears": [
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "dates": {
+    "115": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
   "durationMinutes": 180,
   "repository": "https://github.com/johnnychao/ntust-research-quest",
-  "siteUrl": "https://johnnychao.github.io/ntust-research-quest/"
+  "siteUrl": "https://johnnychao.github.io/ntust-research-quest/",
+  "introVideo": {
+    "title": "90秒，認識四堂研究探險",
+    "src": "assets/video/course-intro-v2.mp4",
+    "poster": "assets/video/course-intro-v2-poster.jpg",
+    "transcriptUrl": "docs/promo-narration.md",
+    "transcript": [
+      "恩恩統計家教，陪你把研究說清楚。",
+      "大家好，我是趙恩。很榮幸再次以業界師資，參與台科大「運動科學與身體活動研究法」，陪碩博士班同學協同實作四堂課。",
+      "我們採用問題導向學習，從真實研究問題出發。透過運動科學研究探險隊，完成二十四關，留下自己的判斷與反思。",
+      "第一堂，看不見的動機。分清構念、指標與測量誤差，從探索到驗證因素分析，選擇適合的方法。",
+      "第二堂，動機與活力。搭配成人六個月的期刊研究，認識問卷、因素負荷量與結構方程模型。讀模型，也談證據。",
+      "第三堂，這把尺能公平比較嗎？用運動高中的期刊案例，檢查跨群組、跨時間的測量恆等性，也學會處理缺失資料。",
+      "第四堂，追蹤成長的研究員。延伸身體自我概念的校園研究，讀懂成長曲線與時間編碼，寫出有根據的研究結論。",
+      "四堂課，從方法走進研究。期待和你一起，將研究問題變成可以檢查、說得清楚的證據。"
+    ]
+  }
 }
